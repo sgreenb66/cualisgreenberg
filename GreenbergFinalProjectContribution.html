@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>LSC 555 Final Project: Critical System Analysis & Usability Study of the National Gallery of Art Library Search System</title>
+<meta name="keywords" content="LSC 555, system analysis, usability study, National Gallery of Art Library Search System"/>
+<meta charset="UTF-8"/>
+<style>
+body {background-color: lightgrey; font-family: Garamond}
+h1 {color: blue;font-size:48px; text-align:center}
+h2 {color:blue; font-size:30px; text-align:center; margin:0; padding:0}
+h3 {color:blue; font-size:25px; text-align:center; margin:0; padding:0}
+h4 {color:blue; font-size:15px; text-align:center; margin:0; padding:0}
+table {width:50%; margin:50px auto; border-collapse:collapse}
+th, td {border:1px solid black; padding:10px; text-align:center}
+img {display: block; margin:0 auto; width: 50%; height: auto; padding:10px; border 2px solid}
+</style>
+</head>
+<body>
+<h1>System Analysis of the National Gallery of Art Library Search System</h1>
+<br>
+<br>
+<h2>Scott Broussard, Sean Greenberg, Dylan Orshefsky, Alexandra Jernakoff, & Amanda Trawick</h2>
+<h2>LSC 555</h2>
+<h2>30 April 2025</h2>
+<br>
+<br>
+<br>
+<br>
+<p>In this report, we analyze core features of the catalog of the Library of the National Gallery of Art (henceforth referred to in what follows as 'NGA'.)</p>
+<p>We begin by reviewing the way that the NGA itself <a href="https://www.nga.gov/research/library/About.html">represents<a/> the Library.  The Library opened along with the NGA itself in 1941; it grew from a small collection of books and a mission of supporting the institution's staff and occasional scholars, to becoming the heart of the Center for Advanced study in the Visual Arts, and it now characterizes its mission as that of serving as a national art research center.  The Library’s collection contains more than 500.000 books and periodicals on art, history, theory, architecture, and art criticism, particularly&mdash;though not exclusively&mdash;focusing on Europe and the United States, the main foci of the NGA's collection.  The NGA Library also hosts an online catalog which can be searched on site or remotely and allows users to search not only the library’s owned content but also its digital serial subscriptions, its extensive image collection, its auction catalogs, and more.</p>
+<p>Our focus in what follows is what might be called the 'basic' search system of the NGA Library.  We defer analyses of the image collections search and the auction catalogs search to future work, although we suspect that certain of our findings will apply to these search systems as well.  Throughout our report, we draw on <a href="https://www.nngroup.com/articles/ten-usability-heuristics/">Nielsen's heuristics</a>, although for the purposes of this report, we emphasize instances of violations of those heuristics rather than conducting a thoroughgoing study in accordance with them.  The body of our report consists of five sections:</p>
+<ol>
+<li>Overview of System Technology</li>
+<li>Analysis of Search System</li>
+<li>Working with Results: Filtering</li>
+<li>Working with Results: Metadata and Buttons</li>
+<li>Accessibility: Tools and Challenges</li>
+</ol>
+<p>In the final section of the report, we advance recommendations for changes to the National Gallery of Art Library search system based on the results of the analysis that we have undertaken.</p> 
+<br>
+<br>
+<br>
+<br>
+<h2>Section 2: Analysis of the Search System</h2>
+<p>In this section of the report, we analyze the NGA Library's search system, focusing on basic and advanced searches, and highlight issues that we think merit further consideration.</p>
+<p>Our starting point is the library's main search page.</p>
+<img src="ScreenshotHomepagetop.PNG" alt="screenshot of the top of the NGA Library search homepage">
+<p>As noted above, there are multiple search functions on the NGA Library page: our focus is on the 'simple' and 'advanced' search functions.  However, before we turn to those search functions, we wish to note that there are three main options for searches: searches can either be limited to the library, to electronic and digital resources, or to everything, as manifest in the dropdown menu on the screenshot below.</p>
+<img src="ScreenshotSearchOptions.PNG" alt="screenshot of search options">
+<p>However, these options are explained only, as it were, below the fold on the search page, so they are not immediately apparent, unless one has worked through the entirety the Library's main search page, and we are inclined to suspect that most users will not do so.</p>
+<img src="ScreenshotHomepageBottom.PNG" alt="screenshot of explanation of search options">
+<p>Let's now consider the simple search function.  Here we begin a search intended for 'Candida Höfer': as can be seen, after typing 'Candida', a number of suggestions appear.  The first suggestions concern whether the search will be limited to the library, electronic and digital resources, or everything; further suggestions concern the continuation of 'Candida' and the specific kind of information sought.  Note that unless one was antecedently aware of the various search options, one might well be at a loss here.  This seems to violate both Nielsen heuristic #4 (consistency and standards) and #6 (recognition vs. recall).</p>
+<img src="ScreenshotTermSuggestions.PNG" alt="screenshot of suggestions in a simple search">
+<p>We now turn to the advanced search function.  It is implicitly set up for Boolean searching, although it is left to the user to infer that from the structure of the search box.  Here again, Nielsen heuristics #4 and #6 seem to be violated.</p>
+<img src="ScreenshotAdvancedSearchBox.PNG" alt="screenshot of advanced search box">
+<p>It's worth contrasting the minimal help information on offer in the NGA search page with the CUA library catalog, which, like the NGA catalog, uses the Primo Ex Libris VE system.  The CUA catalog offers explanations both of what the searchbox is and how it works, as well as search tips that go beyond Boolean functions.  (The two screenshots that follow illustrate each point in turn.)</p>
+<img src="ScreenshotCUASearchboxExplanation.PNG" alt="screenshot of CUA search box with explanation">
+<img src="ScreenshotCUASearchTips.PNG" alt="screenshot of CUA search tips">
+<p>This contrast brings us to what we take to be one of the deepest problems with the NGA Library search system: it provides next to no help and documentation, thereby running afoul of Nielsen heuristic #10), so the user is left to infer how to use the system.  While one might object that this is not a problem, given that the intended users of the NGA Library search system are curators and scholars, this assumption, is, we think, misplaced.  As Bates (2017) observes: "As a rule, people&mdash;including Ph.D. scholars&mdash;develop what search skills they have incidentally to their primary efforts at research or problem-solving and often fail to develop a conscious repertoire of search skills and techniques to help them over difficult stages.”  It should therefore not be assumed that <i>any</i> of the intended users of the NGA Library search system <i>have</i>developed these skills (p. 2080).</p>
+<br>
+<br>
+<br>
+<br>
+<h2>Summary and Conclusion</h2>
+<p>Our aim in what follows is to advance our recommendations for changes to the NGA Library search system on the basis of the preceding analysis.</p>
+<ul>
+<li>Many features are locked unless one has a user account, and user accounts must be created on site: consequently, the library is less useful than it might be to repote researchers, which is not in keeping with its aim of being a national art research center.  We recommend that steps be taken to enable users to gain access to more of the system's features from distance, which will further the Library's overarching aim.</li>
+<li>We recommend that the library incorporate detailed help information into its system&mdash;including information about Boolean searches, double quotation marks, truncation, etc.&mdash;and also make information, such as information about the different types of search the basic system supports, more visible.  The example below, from the CUA library search system, which, as noted above, is the same technology as the NGA Library search system, provides a good model.</li>
+<img src="ScreenshotPrototypeInfo.PNG" alt="screenshot of prototype help information from CUA Library search">
+<li>There should be an option for save search filter settings into a single 'bookmarked' query.</li>
+<li>The 'Sort by Author' filter, in particular, needs to be fixed so that it will produce more accurate results.</li>
+<li>An accessibility menu should be added, enabling features such as text resizing.</li>
+<p>We believe that the recommended changes will further the Library's overarching mission and aims.</p>
+<br>
+<br>
+<h2>References</h2>
+Bates, M. J. (2017).  Information behavior.  In M. Levine-Clark & J.D. McDonald (Eds.), <i>Encyclopedia of library and information sciences</i> (4th ed., pp. 2074-2085).  Taylor and Francis. 
+
